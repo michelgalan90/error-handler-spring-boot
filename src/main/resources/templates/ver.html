@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}">Viendo el usuario con el id [[${usuario.id}]]</title>
+</head>
+<body>
+<h1>Este es el html ver que muestra un usuario dependiendo del id</h1>
+<h2 th:text="'EL nombre del usuario es: ' + ${usuario.nombre}"></h2>
+<h2 th:text="'EL apellido del usuario es: ' + ${usuario.apellido}"></h2>
+
+</body>
+</html>
